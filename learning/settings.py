@@ -129,7 +129,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import django_heroku
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 django_heroku.settings(locals())
+
 MEDIA_ROOT = BASE_DIR / 'mediafiles/'
 MEDIA_URL = '/media/'
 
@@ -139,3 +141,4 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = 'stock:account'
 LOGIN_URL = 'login'
+
