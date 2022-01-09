@@ -112,7 +112,7 @@ def stock_sell(request, pk):
         current_cost = acc_stock.average_buy_cost * acc_stock.amount
 
         total_cost = current_cost + buy_cost
-        total_amount = acc_stock.amount + amount
+        total_amount = acc_stock.amount - amount
 
         acc_stock.amount = total_amount
         acc_stock.average_buy_cost = total_cost / total_amount
